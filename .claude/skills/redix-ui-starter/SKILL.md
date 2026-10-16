@@ -9,13 +9,13 @@ description: How to change and verify the redix-ui-starter SPA (Vite + TanStack 
 
 ## Where a change goes
 
-| The request is about | Start in |
-| --- | --- |
-| A page, a route, a dialog | `src/features/` and `src/main.tsx` |
-| The API client or its error handling | `src/lib/api.ts` (test beside it) |
-| The mock API | `mock/mock-api.ts` |
-| The shell, nav, header | `src/shell.tsx`, `src/nav.ts`, `src/header.tsx` |
-| A UI component | `shared-ui` (the registry), then `npx shadcn add @koderi/<item> --overwrite` |
+| The request is about                 | Start in                                                                     |
+| ------------------------------------ | ---------------------------------------------------------------------------- |
+| A page, a route, a dialog            | `src/features/` and `src/main.tsx`                                           |
+| The API client or its error handling | `src/lib/api.ts` (test beside it)                                            |
+| The mock API                         | `mock/mock-api.ts`                                                           |
+| The shell, nav, header               | `src/shell.tsx`, `src/nav.ts`, `src/header.tsx`                              |
+| A UI component                       | `shared-ui` (the registry), then `npx shadcn add @koderi/<item> --overwrite` |
 
 ## Rules
 

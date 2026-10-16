@@ -6,6 +6,7 @@ import { DashboardPage } from "./features/dashboard/dashboard";
 import { ItemDetailPage } from "./features/items/detail";
 import { ItemsPage } from "./features/items/items";
 import { SettingsPage } from "./features/settings/settings";
+import { TreePage } from "./features/tree/tree";
 import { Shell } from "./shell";
 import "./styles.css";
 
@@ -31,8 +32,19 @@ const settingsRoute = createRoute({
   path: "/settings",
   component: SettingsPage,
 });
+const treeRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/tree",
+  component: TreePage,
+});
 
-const routeTree = rootRoute.addChildren([indexRoute, itemsRoute, itemDetailRoute, settingsRoute]);
+const routeTree = rootRoute.addChildren([
+  indexRoute,
+  itemsRoute,
+  itemDetailRoute,
+  settingsRoute,
+  treeRoute,
+]);
 
 const router = createRouter({ routeTree });
 
