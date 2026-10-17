@@ -1,6 +1,6 @@
 # redix-ui-starter
 
-A Vite SPA starter that looks and works like Pylon. The UI is installed from the `@koderi`
+A Vite SPA starter. The UI is installed from the `@koderi`
 shadcn registry (`shared-ui`); this repo is the app around it.
 
 ```sh
